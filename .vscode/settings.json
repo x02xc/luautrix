@@ -1,0 +1,14 @@
+{
+	"luau-lsp.require.mode": "relativeToFile",
+	"luau-lsp.require.directoryAliases": {
+		"@lune/": "~/.lune/.typedefs/0.8.2/",
+		"@Builders": "DiscordLuau/Package/Classes/Builders",
+		"@Network": "DiscordLuau/Package/Classes/Network",
+		"@Objects": "DiscordLuau/Package/Classes/Objects",
+		"@Data": "DiscordLuau/Package/Data",
+		"@Enums": "DiscordLuau/Package/Enums",
+		"@Std": "DiscordLuau/Package/Std",
+		"@Utils": "DiscordLuau/Package/Utils",
+		"@Vendor": "DiscordLuau/Package/Vendor",
+	}
+}
