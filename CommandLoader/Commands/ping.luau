@@ -5,16 +5,18 @@ local permissions = DiscordLuau.PermissionsBuilder
 	.new()
 	:addPermission(DiscordLuau.PermissionsBuilder.Permissions.UseApplicationCommands)
 function ping.command()
-	local command = DiscordLuau.CommandBuilder
-		.new()
-		:setName("ping")
-		:setDescription("Pong?")
-		:setGuildPermissions(permissions)
-		:addContext(DiscordLuau.CommandBuilder.Context.Guild)
-		:addIntegration(DiscordLuau.CommandBuilder.IntegrationType.GuildCommand)
-		:setExecutor(function(interaction)
-			interaction:sendMessageAsync(MessageBuilder.new():setContent("hi"))
-		end)
+	local command = {
+		DiscordLuau.CommandBuilder
+			.new()
+			:setName("ping")
+			:setDescription("er?")
+			:setGuildPermissions(permissions)
+			:addContext(DiscordLuau.CommandBuilder.Context.Guild)
+			:addIntegration(DiscordLuau.CommandBuilder.IntegrationType.GuildCommand),
+		function(interaction)
+			interaction:sendMessageAsync(MessageBuilder.new():setContent("Pong!"))
+		end,
+	}
 
 	return command
 end
