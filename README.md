@@ -1,2 +1,2 @@
 # luautrix-private
-discord bot made in luau (also for making changes to the library sometimes too :P)
+discord bot made in luau, using the DiscordLuau API wrapper. Developed with the Lune runtime in mind
